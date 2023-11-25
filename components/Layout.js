@@ -1,11 +1,11 @@
-//fontes
-import {Sora} from '@next/font/google'
+///fontes
+import {Sora as SoraFont} from '@next/font/google'
 
 //configurações de fonte
-const Sora = Sora({
+const Sora = SoraFont({
   subsets: ['latin'],
   variable: '--font-sora',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800',],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
 
 import Nav from '../components/Nav'
