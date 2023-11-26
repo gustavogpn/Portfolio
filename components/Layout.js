@@ -1,7 +1,7 @@
-///fontes
+//fonts
 import {Sora as SoraFont} from '@next/font/google'
 
-//configurações de fonte
+//font setup
 const Sora = SoraFont({
   subsets: ['latin'],
   variable: '--font-sora',
