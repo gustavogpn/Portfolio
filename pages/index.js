@@ -1,6 +1,8 @@
 // next image
 import Image from "next/image";
 
+import Link from "next/link";
+
 // components
 import ParticlesConteiner from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -11,7 +13,6 @@ import {easeInOut, motion} from 'framer-motion';
 
 // variants
 import {fadeIn} from '../variants'
-
 
 const Home = () => {
   return (
@@ -29,7 +30,7 @@ const Home = () => {
             exit='hidden'
             className="h1"
           >
-              Transforme Ideias <br /> Em {''} 
+              Transforme Ideias <br /> Em {' '} 
               <span className="text-accent">Realidade Digital</span>
           </motion.h1>
           {/* subtitle */}
@@ -55,7 +56,7 @@ const Home = () => {
               exit='hidden'
               className="hidden xl:flex"
             >
-              <ProjectsBtn />
+                <ProjectsBtn />
             </motion.div>
             
         </div> 
