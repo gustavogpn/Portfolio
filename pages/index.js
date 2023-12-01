@@ -28,7 +28,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="h1 z-30"
+            className="h1 z-20"
           >
               Transforme Ideias <br /> Em {' '} 
               <span className="text-accent">Realidade Digital</span>
@@ -39,7 +39,7 @@ const Home = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-20"
             >
               Lorem dolor sit amet, consectetur adipiscing elit. Nullam 
               semper enim ac nisi euismod,vestibulum volutpat enim imperdiet. 
@@ -48,7 +48,7 @@ const Home = () => {
             { /* Btn */}
             
               <motion.div
-                className="flex justify-center xl:hidden relative z-50"
+                className="flex justify-center xl:hidden relative z-20"
                 variants={fadeIn('up', 0.4)}
                 initial='hidden'
                 animate='show'
@@ -84,7 +84,7 @@ const Home = () => {
           exit='hidden'
           transition={{duration: 1, ease: 'easeInOut'}}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32
-          lg:bottom-0 lg:right-[8%] z-40">
+          lg:bottom-0 lg:right-[8%] z-20">
           <Avatar />
         </motion.div>
       </div>
