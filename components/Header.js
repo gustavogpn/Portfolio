@@ -4,7 +4,7 @@ import Image from "next/image";
 //Link
 import Link from "next/link";
 
-//components
+//components - Não usado
 import Socials from '../components/Socials'
 
 const Header = () => {
@@ -24,8 +24,7 @@ const Header = () => {
             priority={true}
           />
         </Link>
-        {/** 'socials' OBS: Serão ocultados posteriormente */}
-        <Socials />
+        {/** 'socials' OBS: Não Usados */}
       </div>
     </div>
   </header>
