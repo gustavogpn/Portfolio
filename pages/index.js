@@ -46,18 +46,25 @@ const Home = () => {
               Integer eu facilisis sapien. 
             </motion.p>
             { /* Btn */}
-            <div className="flex justify-center xl:hidden relative">
-              <ProjectsBtn />
-            </div>
-            <motion.div 
-              variants={fadeIn('down', 0.4)}
-              initial='hidden'
-              animate='show'
-              exit='hidden'
-              className="hidden xl:flex"
-            >
+            
+              <motion.div
+                className="flex justify-center xl:hidden relative"
+                variants={fadeIn('up', 0.4)}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+                >
                 <ProjectsBtn />
-            </motion.div>
+              </motion.div>
+              <motion.div 
+                className="hidden xl:flex"
+                variants={fadeIn('down', 0.4)}
+                initial='hidden'
+                animate='show'
+                exit='hidden'
+              >
+                  <ProjectsBtn />
+              </motion.div>
             
         </div> 
       </div>
