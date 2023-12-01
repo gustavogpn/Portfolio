@@ -28,7 +28,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="h1"
+            className="h1 z-30"
           >
               Transforme Ideias <br /> Em {' '} 
               <span className="text-accent">Realidade Digital</span>
@@ -39,7 +39,7 @@ const Home = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+              className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
             >
               Lorem dolor sit amet, consectetur adipiscing elit. Nullam 
               semper enim ac nisi euismod,vestibulum volutpat enim imperdiet. 
@@ -48,7 +48,7 @@ const Home = () => {
             { /* Btn */}
             
               <motion.div
-                className="flex justify-center xl:hidden relative z-40"
+                className="flex justify-center xl:hidden relative z-50"
                 variants={fadeIn('up', 0.4)}
                 initial='hidden'
                 animate='show'
@@ -71,11 +71,11 @@ const Home = () => {
       {/* image */}
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg-image */}
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
+        <div className="bg-none xl:bg-explosion animate-pulse duration-100 xl:bg-cover xl:bg-right
         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 z-10">
         </div>
         {/* particles */}
-        <ParticlesConteiner className="z-20" />
+        <ParticlesConteiner className="z-0" />
         {/* avatar img */}
         <motion.div 
           variants={fadeIn('up', 0.5)}
@@ -84,7 +84,7 @@ const Home = () => {
           exit='hidden'
           transition={{duration: 1, ease: 'easeInOut'}}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32
-          lg:bottom-0 lg:right-[8%] z-30">
+          lg:bottom-0 lg:right-[8%] z-40">
           <Avatar />
         </motion.div>
       </div>
