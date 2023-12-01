@@ -1,25 +1,31 @@
+import React, { useState } from 'react';
+
 // icons
 import {
   FaHtml5,
   FaCss3,
   FaJs,
-  FaReact,
   FaWordpress,
   FaFigma,
+  FaPhp,
 } from "react-icons/fa";
 
 import {
-  SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
+
+// components
+
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
+
 
 
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'habilidades',
     info: [
       {
         title: 'Web Development',
@@ -27,15 +33,17 @@ const aboutData = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
+          <FaPhp />,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [
+        <FaFigma />, 
+        <SiAdobexd />, 
+        <SiAdobephotoshop />
+      ],
       },
     ],
   },
@@ -89,7 +97,10 @@ const aboutData = [
 ];
 
 const About = () => {
-  return <div>About</div>;
+  const[index, setIndex] = useState(0)
+  return <div>
+    <Circles />
+  </div>;
 };
 
 export default About;
