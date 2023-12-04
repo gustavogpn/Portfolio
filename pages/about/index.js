@@ -19,7 +19,9 @@ import {
 import Avatar from '../../components/Avatar';
 import Circles from '../../components/Circles';
 
+//counter
 
+import CountUp from 'react-countup'; 
 
 //  data
 const aboutData = [
@@ -90,7 +92,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className='hidden xl:flex absolute bottom-0 -left-[370px]'
+    className='hidden xl:flex absolute bottom-100 -left-[370px]'
     >
       <Avatar />
     </motion.div>
@@ -98,11 +100,26 @@ const About = () => {
     gap-x-6'>
       {/* text */}
       <div className='flex-1 flex flex-col justify-center'>
-        <h2>Boas <span>Ideas </span>Criam Designs Fantásticos.</h2>
-        <p>Há 3 anos, eu comecei com o Desenvolvimento Web, desde então estudo constantemente 
-        as tecnologias mais inovadoras. Já participei de vários projetos, com ênfase em sites 
-        institucionais, landing pages e e-commerces. Graduado em Análise e Desenvolvimento
-        de Sistemas, faço a ponte entre sua ideia e um negócio de sucesso.</p>
+        <h2 className='h2'>
+          Grandes <span className='text-accent'>Ideias </span> Criam Designs Fantásticos.
+        </h2>
+        <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+            Há 3 anos participo de vários projetos, com ênfase em sites 
+          institucionais, landing pages e e-commerces. Graduado em Análise e Desenvolvimento
+          de Sistemas, faço a ponte entre sua ideia e um negócio de sucesso.
+        </p>
+        {/* counters */}
+        <div>
+          <div>
+            {/** experience */}
+            <div className='relative flex-1 after:w-[1px] after:h-full
+            after:bg-white/10 after:absolute after:top-0 after:right-0'></div>
+            <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
+              < CountUp start={0} end={3} duration={10} /> +
+            </div>
+            <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Anos de Experiência</div>
+            </div>
+        </div>
       </div>
       {/* info */}
         <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
